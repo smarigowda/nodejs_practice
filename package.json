@@ -1,0 +1,8 @@
+{
+  "name": "nodejs_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:smarigowda/nodejs_practice.git",
+  "author": "Santosh Marigowda <santosharakere@gmail.com>",
+  "license": "MIT"
+}
