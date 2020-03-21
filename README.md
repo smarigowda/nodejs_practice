@@ -68,3 +68,8 @@ npm login
 npm publish
 ```
 ## Use the published package in a new npm package.
+
+## Install babel package for Class support. And enable Class Properties.
+```
+npm install --save-dev @babel/plugin-proposal-class-properties
+```

@@ -1,3 +1,3 @@
-import { sayHello } from "./test";
-const value = sayHello();
-console.log(`[index.js] ${value}`);
+import { createHello } from "./test";
+
+export { createHello };

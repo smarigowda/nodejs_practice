@@ -1,5 +1,15 @@
-import fs from 'fs';
-const sayHello = () => {
-    return 'Hello world !';
+class Hello {
+  salutation;
+  constructor({ salutation }) {
+    this.salutation = salutation;
+  }
+  getSalutaion() {
+    return this.salutation;
+  }
 }
-export { sayHello };
+
+const createHello = ({ salutation }) => {
+  return new Hello({ salutation });
+};
+
+export { createHello };
