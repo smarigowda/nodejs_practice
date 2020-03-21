@@ -6,8 +6,9 @@ Setup and practice Node js coding
 
 https://www.robinwieruch.de/minimal-node-js-babel-setup
 
-## Initialize using yarn
+https://babeljs.io/docs/en/next/babel-cli
 
+## Initialize using yarn
 ```
 yarn init
 ```
@@ -38,3 +39,32 @@ Install `nodemon`, a tool that helps develop node.js based applications by autom
 ```
 npm install --save-dev nodemon
 ```
+
+## Install babel cli
+
+```
+npm install --save-dev @babel/cli
+```
+
+## Setup npm registry
+
+```
+npm config set registry https://registry.npmjs.com/
+```
+
+## Create .npmrc file
+
+```
+//.npmrc
+// Create auth token by logging into npm and replace AUTH-TOKEN with it.
+registry=https://registry.npmjs.com/AUTH-TOKEN/santosharakere/
+```
+## Login to npm
+```
+npm login
+```
+## Publish package
+```
+npm publish
+```
+## Use the published package in a new npm package.
