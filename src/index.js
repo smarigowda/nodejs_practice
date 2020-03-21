@@ -1,3 +1,5 @@
 import { createHello } from "./test";
-console.log("imported...");
+let helloInstance = createHello({ salutation: "hello world!" });
+console.log(helloInstance);
+console.log(helloInstance.getSalutaion());
 export { createHello };

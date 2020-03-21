@@ -9,6 +9,7 @@ https://www.robinwieruch.de/minimal-node-js-babel-setup
 https://babeljs.io/docs/en/next/babel-cli
 
 ## Initialize using yarn
+
 ```
 yarn init
 ```
@@ -59,17 +60,43 @@ npm config set registry https://registry.npmjs.com/
 // Create auth token by logging into npm and replace AUTH-TOKEN with it.
 registry=https://registry.npmjs.com/AUTH-TOKEN/santosharakere/
 ```
+
 ## Login to npm
+
 ```
 npm login
 ```
+
 ## Publish package
+
 ```
 npm publish
 ```
+
 ## Use the published package in a new npm package.
 
 ## Install babel package for Class support. And enable Class Properties.
+
 ```
 npm install --save-dev @babel/plugin-proposal-class-properties
+```
+
+## Debug using launch json
+
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Launch via npm",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "debug"],
+        "port": 9229
+    }]
+}
 ```
