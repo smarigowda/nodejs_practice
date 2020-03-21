@@ -8,7 +8,7 @@
   "scripts": {
     "watch": "nodemon --exec babel-node src/index.js",
     "start": "babel-node src/index.js",
-    "test": "npm run compile && jest test/hello.test.spec.js",
+    "test": "npm run compile && jest test/hello.test.spec.js --coverage",
     "compile": "babel src --out-dir lib --source-maps",
     "debug": "node --nolazy --inspect-brk=9229 lib/index.js",
     "build-and-publish": "npm run compile && npm publish"
