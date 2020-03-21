@@ -105,4 +105,7 @@ https://medium.com/@ryanblahnik/setting-up-testing-with-jest-and-node-js-b793f1b
 ```
 npm install --save-dev jest
 ```
+### Setup and Configure Sonar Cloud
+create a file sonar-project.properties
+
 
