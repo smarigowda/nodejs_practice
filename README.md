@@ -100,12 +100,21 @@ npm install --save-dev @babel/plugin-proposal-class-properties
     }]
 }
 ```
+
 ### Setup Jest
+
 https://medium.com/@ryanblahnik/setting-up-testing-with-jest-and-node-js-b793f1b5621e
+
 ```
 npm install --save-dev jest
 ```
+
 ### Setup and Configure Sonar Cloud
-create a file sonar-project.properties
 
+https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
 
+Create configuration file `sonar-project.properties` at project root.
+
+Download Sonar Scanner, unzip into a folder and add the `bin` folder to PATH (On mac edit `.bash_profile`)
+
+Run `sonar-scanner` command at project root.
